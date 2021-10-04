@@ -1,0 +1,242 @@
+/* Use for development mode. For production use prod-styles.scss (unused code was deleted)*/
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+ 
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+}
+
+.mainBox { 
+    padding-bottom: 99px;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 135vh;
+    z-index: 99;
+    text-align: center;
+    background: #051e34;
+    opacity: 1;
+}
+ 
+.arrow { 
+  width: 45px;
+  height: 45px;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  margin-top: -27px;
+  margin-bottom: 45px;
+  background: #1b3a57;
+    &:hover {
+      border: 2px solid grey;
+      cursor: pointer;
+    }
+}
+
+.imgContainer {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.imgBox {
+   width: 100%;
+   height: 45%; 
+}
+
+.container {
+    margin-top: 27px;
+    max-width: 1170px;
+}
+
+h1,h2 {
+    font-size: 18px;
+    color: #f0fff0;
+    letter-spacing: 0.09rem;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #aaa;
+    letter-spacing: 0.09rem;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 18px 9px 9px 9px;
+    color: #1b3a57;
+}
+
+table h4 {
+    letter-spacing: 0.09rem;
+}
+
+table {
+
+        thead {
+            
+                th:nth-child(2) { 
+                   h4 { color: #90EE90;
+                   }
+                } 
+                th:nth-child(3) { 
+                   h4 { color: #87CEFA;
+                   }
+                } 
+                th:nth-child(4) { 
+                   h4 { color: #FF7F50;
+                   }
+                }
+        }
+}
+
+tbody i {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 0.09rem;
+}
+
+tbody span {
+    color: #fff;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #1b3a57;;
+    cursor: pointer;
+}
+
+.card-header {
+    margin-bottom: 18px;
+    color: lavender;
+    background: #1b3a57;
+}
+
+.row {
+    border-top : 1px solid #aaa; 
+    text-align: center;
+}
+
+.col {
+    margin: 18px auto;
+}
+
+.name {
+    background: #c9c9c9;
+}
+
+.legend-title-text, 
+.legend-label-text {
+    color: #1b3a57;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    min-height: 18vh;
+    z-index: 99;
+    text-align: center;
+    background: #051e34;
+    border-top: 1px solid #6c757d;
+}
+
+button {
+    letter-spacing: 0.09rem;
+
+    &:hover {
+        strong {
+            color: #051e34 !important;
+        }
+    }
+    strong {
+       color: #aaa !important;
+    }
+}
+
+
+
+@media  screen and (min-width : 480px) { 
+    
+    h1,h2 {
+        font-size: 27px;
+    } 
+
+    h3 {
+        font-size: 22px;
+    }  
+
+    .imgBox {
+        width: 459px;
+        max-height: 279px;
+    }
+}
+
+
+@media  screen and (min-width : 630px) { 
+    
+    .arrow {  
+        margin-bottom: 72px;
+    }
+
+    .col {
+        margin: 27px 9px 27px 9px;
+    }
+
+    h4 {
+        padding: 9px 9px 9px 9px;
+    }
+
+    table {
+        margin-top: 36px;
+    }
+
+    .table-responsive {
+        padding-bottom: 36px;
+    } 
+    
+}
+
+
+@media  screen and (min-width : 738px) {  
+    
+    h4 {
+        font-size: 18px;
+    }
+
+    tbody i, tbody span {
+        font-size: 16px;
+    }
+
+    table {
+        margin-top: 63px;
+    }
+
+    .table-responsive {
+        padding-bottom: 63px;
+    }  
+
+}
+
+@media  screen and (min-width : 1200px) {  
+    
+    
+    table {
+        margin-top: 126px; 
+    }
+    
+    .table-responsive {
+        padding-bottom: 126px;
+    }
+    
+    tbody i, tbody span {
+        font-size: 18px;
+    }  
+
+}

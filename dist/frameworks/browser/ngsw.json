@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "timestamp": 1631921497599,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.a804c574857653ad2cc6.js",
+        "/manifest.webmanifest",
+        "/polyfills.bc367420ab03f1bb7407.js",
+        "/runtime.829b332f453adc43e70e.js",
+        "/src_app_charts_charts_module_ts.02bd73dd14ce4f30954c.js",
+        "/styles.c9bcfd07ebf9fb1d83ae.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/apple/apple-touch-icon.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/main999.js",
+        "/assets/rangers.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/apple/apple-touch-icon.png": "77224dc229075fc690b26658578fdd1c70dc2ca3",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/main999.js": "648ed4acdd64c1354274dd5b97d2d7aeb5ad1ee6",
+    "/assets/rangers.jpg": "c9ad854ad0f01621c80981e90c1316ddd3001dc2",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "994b64914e8565ff1a216a2ba76561809e34e6cf",
+    "/main.a804c574857653ad2cc6.js": "924f44f9f99c3771199b88c4252f993f6bb9f6dc",
+    "/manifest.webmanifest": "44cd8c6a923d7fd789d3e0209ce68d9d88af1f37",
+    "/polyfills.bc367420ab03f1bb7407.js": "6d17e22dbc40ffa166efbf79ec4788f5ee820526",
+    "/runtime.829b332f453adc43e70e.js": "7d434b1c9a1d3027f4f4e39c5ff70a586a856cb7",
+    "/src_app_charts_charts_module_ts.02bd73dd14ce4f30954c.js": "49021cf8060cb0dfe2e1ccb8f516e5d054d0904f",
+    "/styles.c9bcfd07ebf9fb1d83ae.css": "134b3a0ea39f126480750cc47f37d8647a328171"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

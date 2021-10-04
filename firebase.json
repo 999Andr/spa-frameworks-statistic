@@ -1,0 +1,36 @@
+{
+  "hosting": {
+    "public": "dist/frameworks/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/!(*.*)",
+        "headers": [
+          {"key": "Cache-Control", "value": "no-cache"}
+        ]
+      },
+      {
+        "source": "**/*.@(gif|jpg|jpeg|png|svg|webp|js|css|webmanifest|ico|eot|otf|ttf|ttc|woff|woff2|font.css)",
+        "headers": [
+          {"key": "Cache-Control", "value": "max-age=31536000"}
+        ]
+      },
+      {
+        "source": "**/*.+([0-9a-f]).@(css|js)",
+        "headers": [
+          {"key": "Cache-Control", "value": "max-age=2592000"}  
+        ]
+      }
+    ]
+  }
+}

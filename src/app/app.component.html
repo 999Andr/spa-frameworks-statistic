@@ -1,0 +1,118 @@
+<div id="bodyBox" class='mainBox'>
+  
+  <header>
+    <div class='arrow mx-auto' (click)="scrollService.goToArrowShow()"></div>
+    <h1>Welcome to </h1>
+    <h2 class="card-header text-uppercase">
+      {{ title }} statistics
+    </h2>
+    <h3>
+      <i>Vue</i> vs <i>React</i> vs <i>Angular</i>
+    </h3>
+  </header>
+  
+  <div class="container" *ngIf='scrollService.window' role='main'>
+  
+    <div class="row">
+      
+      <div class="table-responsive">
+        <table class="table table-striped table-borderless">
+          <thead>
+            <tr>
+              <th scope="col"><h4></h4></th>
+              <th scope="col"><h4>Vue</h4></th>
+              <th scope="col"><h4>React</h4></th>
+              <th scope="col"><h4>Angular</h4></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><i>Easy to learn</i></th>
+              <td><span>+ +</span></td>
+              <td><span>+</span></td>
+              <td><span>TypeScript requires</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>Light weight</i></th>
+              <td><span>+ +</span></td>
+              <td><span>+</span></td>
+              <td><span>-</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>Virtual DOM</i></th>
+              <td><span>+</span></td>
+              <td><span>+</span></td>
+              <td><span>-</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>TypeScript</i></th>
+              <td><span>may be</span></td>
+              <td><span>-</span></td>
+              <td><span>+</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>Server render</i></th>
+              <td><span>+</span></td>
+              <td><span>+</span></td>
+              <td><span>may be</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>Scalability</i></th>
+              <td><span>+</span></td>
+              <td><span>+</span></td>
+              <td><span>+ +</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>All inclusive</i></th>
+              <td><span>-</span></td>
+              <td><span>+</span></td>
+              <td><span>+ +</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>For light apps</i></th>
+              <td><span>+ +</span></td>
+              <td><span>+ +</span></td>
+              <td><span>+</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>For large apps</i></th>
+              <td><span>+</span></td>
+              <td><span>+</span></td>
+              <td><span>+ +</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>For chat apps</i></th>
+              <td><span>+</span></td>
+              <td><span>+</span></td>
+              <td><span>+ +</span></td>
+            </tr>
+            <tr>
+              <th scope="row"><i>Develop with</i></th>
+              <td><span>-</span></td>
+              <td><span>Facebook</span></td>
+              <td><span>Google</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+    </div> 
+
+
+  </div>
+  
+  <div id='compScreen'>
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
+
+<footer class="d-flex align-items-center" id='fB'>
+  <button class="btn btn-outline-secondary text-uppercase mx-auto" (click)='scrollService.goTop()'>
+    <strong>top</strong>
+  </button>
+</footer>
+<div class='imgContainer d-flex align-items-center'>
+  <div class='imgBox mx-auto' id='showImg'></div>
+</div> 
+

@@ -1,0 +1,159 @@
+<div class="container" role='main'> 
+
+	<div class="row">
+    
+      <div class="col">
+        
+        <div class="row name pb-1">
+          <h4>
+            Number of stars on GitHub <i>2020-02-12</i>
+          </h4>
+        </div>
+        <div class="row chart">
+  
+          <ngx-charts-pie-chart class="mx-auto pt-1"
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="single"
+          [gradient]="gradient"
+          [legend]="showLegend"
+          [legendPosition]="legendPosition"
+          [labels]="showLabels"
+          [doughnut]="isDoughnut">
+          </ngx-charts-pie-chart>
+        </div>
+      </div>
+    
+      <div class="col">
+        
+        <div class="row name pb-1">
+          <h4>
+            <i>2018</i> and <i>2019</i> on GitHub
+          </h4>
+        </div>
+      
+        <div class="row chart">
+          <ngx-charts-bar-vertical-normalized class="mx-auto pt-1"
+          [view]="view"
+          [scheme]="colorSchemeTwo"
+          [results]="multi"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel" 
+          [legendPosition]="legendPosition">
+          </ngx-charts-bar-vertical-normalized>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+    
+      <div class="col">
+        
+        <div class="row name pb-1">
+          <h4>
+            <i>2018</i> and <i>2019</i> on GitHub
+          </h4>
+        </div>
+  
+        <div class="row chart">
+          <ngx-charts-bar-vertical-stacked class="mx-auto pt-1"
+          [view]="view"
+          [scheme]="colorSchemeTwo"
+          [results]="multi"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel" 
+          [legendPosition]="legendPosition">
+          </ngx-charts-bar-vertical-stacked>
+        </div>
+      </div>
+
+      <div class="col">
+  
+        <div class="row name pb-1">
+          <h4>
+            Job market late <i>2018</i>. Linkedin
+          </h4>
+        </div>
+
+        <div class="row chart">
+
+          <ngx-charts-pie-chart class="mx-auto pt-1"
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="singleTwo"
+          [gradient]="gradient"
+          [legend]="showLegend"
+          [legendPosition]="legendPosition"
+          [labels]="showLabels"
+          [doughnut]="isDoughnut">
+          </ngx-charts-pie-chart>
+        </div>
+      </div>
+    </div> 
+  
+  
+    <div class="row">
+    
+      <div class="col">
+        
+        <div class="row name pb-1">
+          <h4>
+            Number of stars on GitHub <i>2021-09-07</i>
+          </h4>
+        </div>
+  
+        <div class="row chart">
+          
+          <ngx-charts-pie-chart class="mx-auto pt-1"
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="singleThird"
+          [gradient]="gradient"
+          [legend]="showLegend"
+          [legendPosition]="legendPosition"
+          [labels]="showLabels"
+          [doughnut]="isDoughnut">
+          </ngx-charts-pie-chart>
+
+        </div>
+      </div>
+
+      <div class="col">
+  
+        <div class="row name pb-1">
+          <h4>
+            Job market August <i>2020</i>. Linkedin
+          </h4>
+        </div>
+
+        <div class="row chart">
+
+          <ngx-charts-pie-chart class="mx-auto pt-1"
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="singleFour"
+          [gradient]="gradient"
+          [legend]="showLegend"
+          [legendPosition]="legendPosition"
+          [labels]="showLabels"
+          [doughnut]="isDoughnut">
+          </ngx-charts-pie-chart>
+        </div>
+      </div>
+    </div> 
+
+</div>
+
+
